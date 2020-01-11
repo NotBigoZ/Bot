@@ -1,4 +1,4 @@
-const discord = require("discord.js");
+.const discord = require("discord.js");
 const token = require("./token.json").token;
 const bot = new discord.Client({
   disableEveryone: true
@@ -13,4 +13,4 @@ lib.setup(bot);
 
 module.exports.bot = bot;
 
-bot.login(token);
+bot.login(process.env.token);
